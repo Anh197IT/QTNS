@@ -1,0 +1,31 @@
+﻿@model ql_nha_sach.Models.LOAISACH
+
+@{
+    ViewBag.Title = "Loại Sách";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3 style="font-size:25px;">Bạn có chắc muốn xóa?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal" style="margin-left: 500px; background: #CCFFCC; color:black; width: 25%; ">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tenloai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenloai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="text-align:center; margin-bottom:10px;">
+            <input type="submit" value="Delete" class="btn btn-default"  /> |
+            @Html.ActionLink("Quay Lại", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,83 @@
+﻿@model ql_nha_sach.Models.SACH
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SACH</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAISACH.Maloai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAISACH.Maloai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tensach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tensach)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Anhbia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anhbia)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tentacgia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tentacgia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NXB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NXB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ngaynhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaynhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluongnhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongnhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Giaban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Giaban)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
